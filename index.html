@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zomato-like Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Zomato</h1>
+</header>
+<div class="container">
+    <h1>Featured Restaurants</h1>
+    <div class="restaurant">
+        <img src="pizza.jpg" alt="Pizza Image">
+        <div class="restaurant-content">
+            <h2>Restaurant 1</h2>
+            <p>Cuisine: Italian</p>
+            <p>Rating: 4.5/5</p>
+            <p>Price: ₹100</p>
+            <button onclick="orderNow('Restaurant 1', '₹100')">Order Now</button>
+        </div>
+    </div>
+    <div class="restaurant">
+        <img src="dabali.jpeg" alt="Dabeli Image">
+        <div class="restaurant-content">
+            <h2>Restaurant 2</h2>
+            <p>Cuisine: Chinese</p>
+            <p>Rating: 4.7/5</p>
+            <p>Price: ₹100</p>
+            <button onclick="orderNow('Restaurant 2', '₹100')">Order Now</button>
+        </div>
+    </div>
+    <div class="restaurant">
+        <img src="dalbatichurma.jpeg" alt="Dal Bati Churma Image">
+        <div class="restaurant-content">
+            <h2>Restaurant 3</h2>
+            <p>Cuisine: Indian</p>
+            <p>Rating: 4.6/5</p>
+            <p>Price: ₹200</p>
+            <button onclick="orderNow('Restaurant 3', '₹200')">Order Now</button>
+        </div>
+    </div>
+    <div class="restaurant">
+        <img src="Idli.jpeg" alt="Idli Image">
+        <div class="restaurant-content">
+            <h2>Restaurant 4</h2>
+            <p>Cuisine: American</p>
+            <p>Rating: 4.8/5</p>
+            <p>Price: ₹150</p>
+            <button onclick="orderNow('Restaurant 4', '₹150')">Order Now</button>
+        </div>
+    </div>
+    <div class="restaurant">
+        <img src="fafda.jpeg" alt="Fafda Image">
+        <div class="restaurant-content">
+            <h2>Restaurant 5</h2>
+            <p>Cuisine: Japanese</p>
+            <p>Rating: 4.9/5</p>
+            <p>Price: ₹250</p>
+            <button onclick="orderNow('Restaurant 5', '₹250')">Order Now</button>
+        </div>
+    </div>
+    <div class="restaurant">
+        <img src="momo.jpeg" alt="Chicken Momo Image">
+        <div class="restaurant-content">
+            <h2>Restaurant 6</h2>
+            <p>Cuisine: Indian</p>
+            <p>Rating: 4.5/5</p>
+            <p>Price: ₹300</p>
+            <button onclick="orderNow('Restaurant 6', '₹300')">Order Now</button>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<script>
+    function orderNow(restaurant, price) {
+        alert('You have ordered from ' + restaurant + ' for ' + price);
+    }
+</script>
+</body>
+</html>
